@@ -1,0 +1,20 @@
+.boss {
+  padding-top: 1.2em;
+  border-top: $border;
+  
+  &__title {
+    color: $color-dark;
+    font-weight: $font-normal;
+    text-transform: uppercase;
+    padding-left: 1.3em;
+  }
+
+  &__name {
+    position: absolute;
+    top: 13px;
+    padding-left: 10px;
+    color: $color-blue;
+    font-weight: $font-normal;
+  }
+}
+  

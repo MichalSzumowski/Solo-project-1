@@ -1,0 +1,64 @@
+.topbar {
+  background-color: $color-white;
+  border-bottom: $border;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -1px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  &__item {
+    display: inline;
+    list-style: none;
+    padding: 1.2em;
+    border-left: $border;
+
+    &:hover {
+      background: $color-dark;
+    }
+
+    .icon-arrow-down-small {
+      font-size: $font-size;
+      padding-top: 10px;
+    }
+
+    .icon-notification {
+      font-size: $font-size;
+    }
+
+    &--price {
+      font-size: 17px;
+      font-weight: $font-normal;
+      color: $color-dark;
+    }
+
+    &--user {
+      font-size: $font-size;
+      font-weight: $font-normal;
+      color: $color-blue;
+    }
+
+    &--icon {
+      padding: 0 5px;
+    }
+
+    &--dot {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      top: 30%;
+      right: 55%;
+      background-color: $color-red;
+    }
+
+    a {
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}

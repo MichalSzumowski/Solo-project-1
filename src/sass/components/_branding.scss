@@ -1,0 +1,32 @@
+.branding {
+  background-color: $color-dark;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .logo {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
+    height: 1em;
+    margin-right: 1.8em;
+    margin-top: 1.9em;
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.4em;
+      left: 0px;
+      width: 100%;
+      border-top: 1px solid $color-white;
+    }
+  }
+}
+  

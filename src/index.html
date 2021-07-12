@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <section class="navbar">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li class="navbar__item">
+            <a href="#">
+              <span class="navbar__item--icon icon-wallet"></span>
+              <span class="navbar__item--price">$1,500.00</span>
+              <span class="navbar__item--icon arrow icon-arrow-down-small"></span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <span class="icon-notification"></span>
+              <span class="navbar__item--dot"></span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="modal-open" data-modal="#modal-login">
+              <span class="navbar__item--icon icon-profile"></span>
+              <span class="navbar__item--user">Leonardo Di Carpio</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <span
+                class="navbar__item--icon icon-quit modal-open"
+                data-modal="#modal-quit">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SIDEBAR -->
+  <section class="sidebar" id="sidebar">
+    <div class="row">
+      <div class="col-12">
+        <div class="branding">
+          <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+          <a href="#">
+            <div id="hamburger" class="hamburger"></div>
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#general" class="menu__link">
+              <span class="icon-general menu__item--icon"></span>
+              <span class="menu__item--title">General</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#details" class="menu__link">
+              <span class="icon-details menu__item--icon"></span>
+              <span class="menu__item--title">Details</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#banners" class="menu__link">
+              <span class="icon-banners menu__item--icon"></span>
+              <span class="menu__item--title">Banners</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#links" class="menu__link">
+              <span class="icon-links menu__item--icon"></span>
+              <span class="menu__item--title">Links</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#data" class="menu__link">
+              <span class="icon-personaldata menu__item--icon"></span>
+              <span class="menu__item--title">Personal data</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#payout" class="menu__link">
+              <span class="icon-payout menu__item--icon"></span>
+              <span class="menu__item--title">Payout</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#postback" class="menu__link">
+              <span class="icon-postback menu__item--icon"></span>
+              <span class="menu__item--title">Postback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="boss">
+          <h4 class="boss__title">Your President</h4>
+        </div>
+        <div class="col-12 boss__photo">
+          <a href="#">
+            <span class="dot"></span>
+            <img src="images/avatar.png" alt="Wałęsa"/>
+            <span class="boss__name">Lech Wałęsa</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div class="overlay" id="overlay">
+    <div class="modal" id="myModal">
+      <div class="btn-close js--close-modal">x</div>
+  
+      <h4>Witaj w modalu!</h4>
+      <p>Lorem ipsum dolor sit amet...</p>
+  
+      <button class="js--close-modal">Okay</button>
+    </div>
+  </div>
+  
+
+
+
+
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
+    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+    <ul>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+    </ul>
+    <ol>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+    </ol>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
