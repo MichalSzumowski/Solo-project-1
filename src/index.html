@@ -14,8 +14,8 @@
 
 <body>
 
-  <!-- navbar -->
-  <section class="navbar navbar-lg">
+  <!-- NAVBAR -->
+  <section class="navbar">
     <div class="row">
       <div class="col-12">
         <ul>
@@ -50,7 +50,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- SIDEBAR -->
   <section class="sidebar" id="sidebar">
@@ -118,14 +117,191 @@
             <span class="dot"></span>
             <img src="images/avatar.png" alt="boss"/>
             <span class="boss__name">Lech Wałęsa</span>
+            <span class="boss--dot"></span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- SECTION STATS  -->
+    <section class="statistics box" id="general">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__title">General Statistics</h1>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <div class="date">
+          <div class="date__box">
+            <div class="date__box--start">21.01.2019</div>
+            <div class="date__box--end">21.01.2019</div>
+            <div class="date__box--icon"><a href="#"><span class="icon-calendar"></span></a></div>
+          </div>
+          <button class="btn icon-refresh"></button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row center-content">
+          <div class="col-sm-12 col-md-10 col-lg-8 padding-content">
+            <div class="row stats">
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">Visit Signups</span>
+                <span class="stats__column--number">124</span>
+              </div>
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">New deposit</span>
+                <span class="stats__column--number">564</span>
+              </div>
+            </div>
+            <div class="row stats">
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">FTD</span>
+                <span class="stats__column--number">445</span>
+              </div>
+              <div class="col-md-5 stats__column">
+                <span class="stats__column--title">Turn Over</span>
+                <span class="stats__column--number">432</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row padding-content center-content">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <h1 class="section__subtitle">Earnings Chart</h1>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 center-content">
+          <button class="btn__dot btn__dot--blue"><i class="fa fa-circle"></i>Signups</button>
+          <button class="btn__dot btn__dot--orange"><i class="fa fa-circle"></i>FTD</button>
+          <button class="btn__dot btn__dot--green btn__dot--activated"><i class="fa fa-circle"></i>Earned</button>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION LINKS -->
+    <section class="links box" id="links">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="section__title">Links</h1>
+        </div>
+      </div>
+    
+      <div class="container">
+            <div class="row">
+              <div class="col-12 center-content padding-content">
+                <button class="btn" id="modal-links-button">+ add new</button>
+              </div>
+            </div>
+    
+            <div class="row center-content">
+              <div class="col-lg-8">
+                <div class="scroll-wrapper">
+    
+                  <table class="table">
+                    <tbody>
+                      <tr class="table__row">
+                        <td class="table__cell title">Google</td>
+                        <td class="table__cell address"><a href="https://google.com">https://google.com</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell title">Kodilla</td>
+                        <td class="table__cell address"><a href="s://kodilla.pl">https://kodilla.pl</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell title">Github</td>
+                        <td class="table__cell address"><a href="https://github.com">https://github.com</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell title">Instagram</td>
+                        <td class="table__cell address"><a href="http://instagram.com">https://instagram.com</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell title">Facebook</td>
+                        <td class="table__cell address"><a href="https://Facebook.com">https://Facebook.com</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table__row">
+                        <td class="table__cell title">Kodilla</td>
+                        <td class="table__cell address"><a href="http://kodilla.pl">https://kodilla.pl</a></td>
+                        <td class="table__cell icons">
+                          <div class="overlay">
+                            <a href="#"><span class="icon-links"></span></a>
+                            <a href="#"><span class="icon-trash"></span></a>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+    
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 center-content padding-content">
+              <button class="btn" id="modal-links-button">+ add new</button>
+            </div>
+    
+      </div>
+    </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 
 
 
@@ -145,39 +321,7 @@
 
 
 
-    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-    <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-    <ul>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    </ul>
-    <ol>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-        <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    </ol>
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

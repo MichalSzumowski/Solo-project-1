@@ -7,14 +7,17 @@
 
 /* Components */
 @import "components/modals";
+@import "components/calendar";
 @import "components/branding";
-@import "components/boss";
+@import "components/buttons";
 @import "components/menu";
 
 /* Sections */
-@import "section/main";
 @import "section/navbar";
 @import "section/sidebar";
+@import "section/main";
+@import "section/stats";
+@import "section/links";
 
 
 /* Pages / Views */

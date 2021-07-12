@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
 
   &__item {
     display: inline;
@@ -50,7 +51,7 @@
       height: 7px;
       border-radius: 50%;
       top: 27%;
-      right: 50%;
+      right: 52.5%;
       background-color: $color-orange-1;
     }
 

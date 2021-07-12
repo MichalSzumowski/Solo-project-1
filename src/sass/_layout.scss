@@ -21,14 +21,16 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-/*[class^="col-"] {
+[class^="col-"] {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-}*/
+}
   
 .box {
   margin: 20px;
@@ -37,6 +39,33 @@
   box-shadow: 0 0 10px $color-dark;
 }
 
+.line {
+  border-bottom: $border;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+.padding-content {
+  padding: 2em 0;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
 
 /* Media queries */
 

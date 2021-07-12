@@ -1,0 +1,23 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.stats__column {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: $border;
+}
+
+.stats__column--title {
+  font-size: $font-size;
+  font-weight: $font-medium;
+  color: $color-grey-2;
+}
+
+.stats__column--number {
+  color: $color-dark;
+}
+  

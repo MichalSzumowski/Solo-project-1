@@ -1,13 +1,28 @@
 .main {
-  background: $color-white;
+  background: $color-grey-4;
   padding-top: 50px;
   padding-bottom: 1px;
   width: calc(100% - 200px);
   margin-left: 200px;
-  transition: all .5s ease-in-out;
+  transition: $transition;
+}
 
-  &.active {
-    width: calc(100% - 70px);
-    margin-left: 70px;
-  }
+.main.active {
+  width: calc(100% - 70px);
+  margin-left: 70px;
+}
+
+.section__title {
+  font-size: $font-size;
+  font-weight: $font-medium;
+  color: $color-grey-1;
+  text-transform: uppercase;
+  padding: 10px 20px 18px 20px;
+  border-bottom: $border;
+}
+
+.section__subtitle {
+  font-size: $font-size;
+  font-weight: $font-medium;
+  color: $color-grey-1;
 }

@@ -1,0 +1,37 @@
+.calendar {
+  border-bottom: $border;
+  padding-bottom: 20px;
+
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+      width: 340px;
+      border-radius: 4px;
+      border: $border;
+
+      &--start {
+        justify-content: flex-start;
+        padding: 5px 0 5px 15px;
+      }
+
+      &--end {
+        justify-content: flex-start;
+        padding: 5px 0 5px 15px;
+        border-left: $border;
+      }
+
+      &--icon {
+        justify-content: flex-end;
+        padding-right: 15px;
+      }
+    }
+  }
+}
