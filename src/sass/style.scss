@@ -6,15 +6,16 @@
 @import "layout";
 
 /* Components */
-@import "components/form_field";
 @import "components/modals";
 @import "components/branding";
 @import "components/boss";
+@import "components/menu";
 
 /* Sections */
-@import "section/registration_form";
+@import "section/main";
 @import "section/navbar";
 @import "section/sidebar";
+
 
 /* Pages / Views */
 @import "pages/registration";

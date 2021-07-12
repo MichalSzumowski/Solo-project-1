@@ -1,0 +1,43 @@
+.menu {
+  padding: 0 0 .5em 0;
+  margin-top: 0;
+
+  li {
+    list-style: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  &__item {
+    width: 200px;
+    padding: .7em;
+    font-size: $font-size;
+    border-left: 4px solid $color-menu;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+
+    &--icon {
+      color: $color-white;
+      padding: 0 10px;
+    }
+
+    &--title {
+      color: $color-white;
+    }
+
+    &:hover {
+      background: $color-dark;
+      border-left: 4px solid $color-orange-1;
+      color: $color-white;
+
+      span {
+        color: $color-white;
+      }
+    }
+  }
+}

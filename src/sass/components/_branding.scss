@@ -1,12 +1,19 @@
 .branding {
-  background-color: $color-dark;
+  background-color: $color-menu;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: $transition;
+
+  /*&:hover {
+    background: $color-grey-4;
+  }*/
 
   .logo {
     padding: 20px;
     align-items: center;
+    width: 1.5em;
+    max-height: 100%;
   }
 
   .hamburger {

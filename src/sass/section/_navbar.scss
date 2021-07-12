@@ -1,4 +1,4 @@
-.topbar {
+.navbar {
   background-color: $color-white;
   border-bottom: $border;
   display: flex;
@@ -8,7 +8,6 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
 
   &__item {
     display: inline;
@@ -17,7 +16,7 @@
     border-left: $border;
 
     &:hover {
-      background: $color-dark;
+      background: $color-grey-4;
     }
 
     .icon-arrow-down-small {
@@ -32,7 +31,7 @@
     &--price {
       font-size: 17px;
       font-weight: $font-normal;
-      color: $color-dark;
+      color: $color-grey-1;
     }
 
     &--user {
@@ -50,15 +49,16 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      top: 30%;
-      right: 55%;
-      background-color: $color-red;
+      top: 27%;
+      right: 50%;
+      background-color: $color-orange-1;
     }
 
     a {
       &:hover {
-        color: $color-dark;
+        color: $color-grey-1;
       }
     }
   }
 }
+
