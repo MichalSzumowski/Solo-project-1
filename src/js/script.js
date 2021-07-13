@@ -11,6 +11,27 @@ hamburger.addEventListener('click', function () {
 });
 
 
+/* Active Classes */
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector('.sidebar').classList.add('active');
+    document.querySelector('.navbar').classList.add('active');
+    document.querySelector('.main').classList.add('active');
+  } else {
+    document.querySelector('.sidebar').classList.remove('active');
+    document.querySelector('.navbar').classList.remove('active');
+    document.querySelector('.main').classList.remove('active');
+  }
+}
+
+
+const x = window.matchMedia('(max-width: 768px)');
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+
+
 /* Modals */ 
 
 // close modal by removing "show" class

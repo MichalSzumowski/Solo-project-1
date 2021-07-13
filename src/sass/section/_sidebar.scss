@@ -67,3 +67,44 @@
   }
 }
   
+/*
+@media (max-width: 768px) {
+  #sidebar.active  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1;
+  background: $color-menu;
+  transition: $transition;
+}
+
+.sidebar, #sidebar {
+    width: 70px;
+    .logo,
+    .boss__title,
+    .boss__name,
+    .boss__photo {
+      display: none;
+    }
+
+    .hamburger {
+      margin: 1.7em 0 1em 1.7em;
+    }
+
+    .menu {
+      &__item {
+        width: 70px;
+  
+        &--title {
+          display: block;
+          width: 0;
+          overflow: hidden;
+        }
+      }
+    }
+  
+  }
+
+}*/

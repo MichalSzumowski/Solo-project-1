@@ -26,3 +26,21 @@
   font-weight: $font-medium;
   color: $color-grey-1;
 }
+
+/*
+@media (max-width: 768px) {
+  .main.active  {
+    background: $color-grey-4;
+    padding-top: 50px;
+    padding-bottom: 1px;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    transition: $transition;
+  }
+  
+  .main {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+  }
+}
+*/

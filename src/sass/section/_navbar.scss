@@ -63,3 +63,76 @@
   }
 }
 
+.navbar.active {
+  position: fixed;
+  top: 386px;
+  left: 0px;
+  width: 70px; //70px
+  height: 100%;
+  z-index: 2;
+  background: $color-menu;
+  transition: $transition;
+
+  .navbar__item {
+    display: block;
+    width: 70px;
+    height: 100%;
+    padding: 12px;
+    font-size: $font-size;
+    border-left: 4px solid $color-menu;
+    transition: $transition;
+    overflow: hidden;
+
+    &--icon {
+      color: $color-white;
+      //padding: 0 10px;
+    }
+
+    &--user, &--price, &--dot, .arrow {
+      display: none;
+    }
+
+    &:hover {
+      background: $color-dark;
+      border-left: 4px solid $color-orange-1;
+      color: $color-white;
+    }
+
+  }
+}
+/*
+@media (max-width: 768px) {
+  .navbar {background-color: $color-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    background: $color-menu;
+    transition: $transition;
+  }
+    .logo,
+    .boss__title,
+    .boss__name,
+    .boss__photo {
+      display: none;
+    }
+
+    .hamburger {
+      margin: 1.7em 0 1em 1.7em;
+    }
+
+    .menu {
+      &__item {
+        width: 70px;
+  
+        &--title {
+          display: block;
+          width: 0;
+          overflow: hidden;
+        }
+      }
+    }
+  
+}*/

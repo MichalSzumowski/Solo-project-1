@@ -1,0 +1,73 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  &__row {
+    color: $color-grey-1;
+  
+    &:last-child {
+      border-bottom: $border;
+    }
+  
+    &:hover {
+      background-color: $color-grey-4;
+        
+      .icon-links, .icon-trash {
+        display: inline-block;
+      }
+    }
+  }
+  
+  &__cell {
+    position: relative;
+    border-top: $border;
+    height: 50px;
+  
+    .icon-links {
+      padding: 0 10px;
+      margin: 0;
+      display: none;
+      
+      &:hover {
+        color: $color-orange-1;             
+      }
+    }
+  
+    .icon-trash {
+      color: $color-grey-1;
+      margin: 0;
+      display: none;
+    
+      &:hover {
+        color: $color-orange-1;             
+      }
+    }
+  }
+}
+  
+.title {
+  font-weight: $font-bold;
+  padding-left: 25px;
+}
+  
+.address {
+  color: $color-blue;
+  padding-left: 100px;
+}
+  
+.icons {
+  width: 100px;
+  height: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    padding-left: 10px;
+  }
+    
+  .address {
+    padding-left: 25px;
+  }    
+}
+    
